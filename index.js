@@ -19,7 +19,7 @@ const THOI_GIAN_CHO = 60000; // Thời gian chờ (60 giây)
 
 client.on('messageCreate', async message => {
     if (!message.guild || message.author.bot) return;
-    const allowedChannels = ['1356635941174771853', '1356636092127772722'];
+    const allowedChannels = ['1356635941174771853', '1356636092127772722']; //Có thể thay đổi ID kênh bạn cần chơi nối từ
     if (!allowedChannels.includes(message.channel.id)) return;
 
     const nội_dung = message.content.trim().toLowerCase();
